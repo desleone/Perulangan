@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Perulangan dan Percabangan</title>
+   <style>
+       body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        
+        #result {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+
+   </style>
+</head>
+
+<body>
+
+<h1>Perulangan dan Percabangan</h1>
+
+
+<button onclick="perulanganDanPercabangan()">Klik Saya</button>
+
+
+<div id="result"></div>
+
+<script>
+    function perulanganDanPercabangan() {
+        
+        var angka = 10;
+        var hasilPercabangan = "";
+        if (angka > 5) {
+            hasilPercabangan = "Angka lebih besar dari 5.";
+        } else {
+            hasilPercabangan = "Angka kurang dari atau sama dengan 5.";
+        }
+
+
+        var hasilPerulanganFor = "Menggunakan perulangan for untuk menghitung 1 hingga 5: ";
+        for (var i = 1; i <= 5; i++) {
+            hasilPerulanganFor += i + " ";
+        }
+
+        
+        
+
+        
+        document.getElementById("result").innerHTML = hasilPercabangan + "<br>" + hasilPerulanganFor ;
+    }
+</script>
+
+</body>
+</html>
